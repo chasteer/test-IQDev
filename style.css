@@ -1,0 +1,212 @@
+html, body {
+    margin: 0;
+}
+header,.mainBox,footer
+{
+    width: 1002px;
+    position: relative;
+}
+header
+{
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+header ul>li,footer ul>li{
+    display: inline;
+    list-style: none;
+    color:#fff;
+}
+.mainBox {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    left: 45px;
+    display: -ms-grid;
+    -ms-flex-direction: column;
+    
+}
+
+.headerInfoBox
+{
+    display: grid;
+    display: -ms-grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 5fr;
+    -ms-grid-columns: 3fr 5fr;
+    -ms-grid-rows: 1fr;
+}
+.logoBox
+{
+    background: url("./img/logo.svg.png") no-repeat;
+    width:230px;
+    height: 86px;
+}
+.phoneBox
+{
+    display: flex;
+    
+    display: -ms-flexbox;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.phoneBox>a{
+    font-size: 18pt;
+    color:#eb5017;
+    text-decoration: none;
+}
+.phoneBox>a:hover
+{
+    color: #a5390f;
+}
+.menuBox
+{
+    width:inherit;
+    height: 43px;
+    background-color: #000;
+}
+.menuBox>ul{
+    padding: 0px;
+    display: grid;  
+    grid-template-columns: 19% 15% 17% 20% 11% 20%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    display: -ms-grid;
+    -ms-grid-columns: 19% 15% 17% 20% 11% 20%;
+}
+.menuBox>ul>li:not(:last-child){
+    border: 1px solid #a63e1d;
+}
+.activeMenuLi
+{
+    background-color: #a63e1d;
+}
+.menuBox>ul>li
+{
+    padding:10px;
+}
+.menuBox>ul>li>a
+{
+   text-decoration: none;
+    color:inherit;
+}
+.menuBox>ul>li>a:hover
+{
+    font-size:13pt;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 56px;
+    background-color: #000;
+}
+
+.calcBox
+{
+    width: 655px;
+}
+form{
+    height: 425px;
+    width: 655px;
+    background: #f2f2f2;
+}
+form > p{
+    display: grid;
+    display: -ms-grid;
+    grid-template-rows: 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-columns:  32% 16% 52% 0%;
+    -ms-grid-columns: 32% 16% 52% 0%;
+    height: 39px;
+    align-items: center;
+    width:655px;
+}
+form h1
+{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    color: #EB5017;
+    margin-left:10% ;
+}
+form > p > *
+{
+    margin-right: 15px;
+}
+.irs--modern{
+    width:300px
+}
+label{
+    text-align: right;
+}
+main{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    align-items: center;
+    -ms-flex-item-align: center;
+}
+form > p:last-child{
+    bottom: -23px;
+    position: relative;
+}
+.footerMenuBox>ul>li>a
+{
+    color:inherit;
+}
+.footerMenuBox>ul>li>a:hover
+{
+   color: #a7a7a7
+}
+.footerMenuBox>ul>li{
+    margin-left: 10px;
+}
+#calculate
+{
+    width: 100px;
+    height: 33px;
+    background: linear-gradient(to top, #aff300,#7cc400);
+    border: 0px;
+    border-radius:9px;
+    position: relative;
+    left:22px;
+    color:#436903;
+}
+#spanRes
+{
+    color:#436903;
+}
+.irs-single
+{
+    display: none!important;
+}
+.irs-bar
+{
+    top: 25px !important;
+    background: #8db439 !important;
+    height: 9px !important;
+}
+.irs-min,.irs-max {
+    top: 39px !important;
+    background: none !important;
+    color: #464343 !important;
+}
+.irs-line
+{
+    top: 25px !important;
+    height: 9px !important;
+}
+.irs-handle
+{
+    top: 24px !important;
+    width: 12px !important;
+    height: 12px !important;
+}
