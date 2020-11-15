@@ -36,7 +36,7 @@ $month = preg_split("/\//",$arr[0])[0];
 $j0 = (int)$month - 1;
 $j = (int)$month - 1;
 
-for($i =0; $i<$arr[2]*12-1;$i++)
+for($i =0; $i<$arr[2]*12;$i++)
 {
     if($i%12 == 0)
     {
