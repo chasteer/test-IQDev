@@ -36,7 +36,7 @@ $month = preg_split("/\//",$arr[0])[0];
 $j0 = (int)$month - 1;
 $j = (int)$month - 1;
 
-for($i =0; $i<$arr[2]*12;$i++)
+for($i =0; $i<$arr[2]*12-1;$i++)
 {
     if($i%12 == 0)
     {
@@ -51,7 +51,7 @@ for($i =0; $i<$arr[2]*12;$i++)
             $daysy = 366;
         }
     }
-
+    $summn += $summn_1;
     $summn += ($summn + $summn_1)*$arrdays[$month]*(percent/$daysy);
     $month =  $arrMonth[$j-1];
     if($j < 12)
